@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Satyapragnya Samal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            height: 11vh;
+            background-color: black;
+            color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid aqua;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0 2vh;
+        }
+
+        nav a {
+            color: aqua;
+            font-size: 22px;
+            padding: 4px 2vh;
+            border: 2px solid aqua;
+            border-radius: 10px;
+            margin: 0 1vh;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            box-shadow: 4px 4px 16px aqua;
+        }
+
+        h1 {
+            font-size: 6vh;
+            color: aqua;
+            padding: 2vh;
+        }
+
+        .hm {
+            min-height: 90vh;
+            background-color: rgb(1, 1, 8);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 4vh;
+        }
+
+        .intro {
+            max-width: 50%;
+            color: white;
+            font-size: 4vh;
+        }
+
+        .intro h3 {
+            color: white;
+            font-size: 3vh;
+            margin: 0 5vh;
+        }
+
+        img {
+            width: 35%;
+            max-height: 70vh;
+            border-radius: 50%;
+            box-shadow: 8px 8px 15px aqua;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            box-shadow: 12px 12px 15px green;
+            transform: scale(1.05);
+        }
+
+        .abt,
+        #projects,
+        #skills,
+        #contact {
+            padding: 4vh 2vh;
+        }
+
+        .abt {
+            background-color: rgb(12, 12, 12);
+        }
+
+        .abt p {
+            color: white;
+            font-size: 2.2vh;
+            padding: 2vh;
+            line-height: 1.6;
+        }
+
+        #skills {
+            background-color: black;
+        }
+
+        .box {
+            border: 2px solid aqua;
+            color: white;
+            display: inline-block;
+            height: 6vh;
+            width: 18vh;
+            margin: 3vh 2vh;
+            font-size: 3vh;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 4px 4px 16px aqua;
+            transition: all 0.3s ease;
+            line-height: 6vh;
+        }
+
+        .box:hover {
+            box-shadow: 4px 4px 16px green;
+            transform: scale(1.05);
+        }
+
+        #projects {
+            background-color: rgb(12, 12, 12);
+        }
+
+        .box2 {
+            border: 2px solid aqua;
+            color: white;
+            width: 90%;
+            padding: 2vh;
+            margin: 4vh auto;
+            font-size: 2.2vh;
+            border-radius: 10px;
+            box-shadow: 4px 4px 16px aqua;
+            transition: all 0.3s ease;
+        }
+
+        .box2:hover {
+            box-shadow: 4px 4px 16px green;
+            transform: scale(1.02);
+        }
+
+        .box2 h4 {
+            color: aqua;
+            margin-bottom: 1vh;
+        }
+
+        #contact {
+            background-color: rgb(14, 14, 14);
+            color: white;
+        }
+
+        #contact p {
+            font-size: 2.2vh;
+            padding: 1vh 2vh;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            height: 6vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2vh;
+        }
+         html {
+            scroll-behavior: smooth;
+        }
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 2vh;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 1vh;
+            }
+
+            .hm {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro {
+                max-width: 100%;
+                font-size: 3.5vh;
+            }
+
+            img {
+                width: 70%;
+                margin-top: 3vh;
+            }
+
+            .box {
+                width: 60%;
+                margin: 2vh auto;
+            }
+
+            .box2 {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hm">
+        <div class="intro">
+            <h1>Satyapragnya Samal</h1>
+            <h3>Web Designer | Python Programmer</h3>
+        </div>
+        <img src="WhatsApp Image 2025-07-30 at 10.14.52_f4f65052.jpg" alt="Profile picture of Satyapragnya Samal">
+    </section>
+
+    <section id="about" class="abt">
+        <h1>About</h1>
+        <p>I am a B.Tech Computer Science (Artificial Intelligence) student with a growing passion for web development
+            and programming. I have experience building responsive and structured websites using HTML and CSS. I enjoy
+            turning ideas into simple and functional web pages that focus on user-friendly design.<br><br>
+
+            Currently, I am expanding my knowledge by learning JavaScript and Data Structures. These skills are helping
+            me understand the logic behind programming and how to solve real-world problems efficiently. I also practice
+            Python programming regularly and aim to build projects that enhance both my frontend and backend
+            understanding.<br><br>
+
+            I am always eager to learn new technologies and take on challenges that help me grow as a developer. My goal
+            is to become a full-stack developer and contribute to real-time projects in the tech industry.</p>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="box">HTML</div>
+        <div class="box">CSS</div>
+        <div class="box">Python</div>
+        <div class="box">MySQL</div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="box2">
+            <h4>Login Page Website</h4>
+            <p>Built using <strong>HTML</strong> and <strong>CSS</strong>. Includes input fields for username and
+                password with basic styling and layout.</p>
+        </div>
+        <div class="box2">
+            <h4>Resume Website</h4>
+            <p>A resume-style website created using <strong>HTML</strong> and <strong>CSS</strong>. Includes sections
+                like education, skills, and projects with a neat layout.</p>
+        </div>
+        <div class="box2">
+            <h4>Portfolio Website</h4>
+            <p>A personal portfolio website made using <strong>HTML</strong> and <strong>CSS</strong>. Highlights my
+                projects and skills in a clean, responsive design.</p>
+        </div>
+        <div class="box2">
+            <h4>Quiz Game using Python</h4>
+            <p>A basic quiz game developed in <strong>Python</strong> with multiple-choice questions. Runs in the
+                terminal and shows the final score at the end.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p><strong>Name:</strong> Satyapragnya Samal</p>
+        <p><strong>Contact:</strong> 934892344</p>
+        <p><strong>Email:</strong> satyapragnyasamal@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; Satyapragnya Samal - 2025</p>
+    </footer>
+</body>
+
+</html>
